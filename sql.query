@@ -1,0 +1,22 @@
+let movie_names_query=`
+  SELECT 
+  movie_name
+  FROM
+  movie;
+  `
+
+  -------------------------------------------------------------
+let specific_movie_query=`
+SELECT
+*
+FROM
+movie
+WHERE
+movie_id=${movieId};
+`
+
+
+
+  
+  
+
