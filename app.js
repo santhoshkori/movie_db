@@ -80,7 +80,7 @@ app.get("/movies/:movieId/", async (request, response) => {
   `;
   let unq_mov = await movie_db_server.get(mov_u_query);
   response.send(
-    unq_mov.movie_name.map((movie_unq) => {
+    unq_mov.map((movie_unq) => {
       return movie_unq;
     })
   );
